@@ -1,0 +1,67 @@
+:root {
+  --bg: #000;
+  --dot: #fff8;
+  --dot-active: #fff;
+  --nav-bg: #0008;
+  --nav-text: #fff;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; background: #111; color: #fff; font-family: system-ui, Segoe UI, Roboto, Arial; }
+
+.slider {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  aspect-ratio: 16/9;
+  background: var(--bg);
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.slider-track {
+  display: flex;
+  width: 500%;
+  height: 100%;
+  transform: translateX(0%);
+  transition: transform 400ms ease;
+}
+
+.slider-track img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  flex: 0 0 100%;
+  user-select: none;
+  pointer-events: none;
+}
+
+.nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--nav-bg);
+  color: var(--nav-text);
+  font-size: 24px;
+  cursor: pointer;
+}
+.nav:hover { background: #000c; }
+.prev { left: 12px; }
+.next { right: 12px; }
+
+.dots {
+  position: absolute;
+  left: 0; right: 0; bottom: 12px;
+  display: flex; gap: 8px; justify-content: center;
+}
+
+.dot {
+  width: 10px; height: 10px; border-radius: 50%;
+  background: var(--dot); border: 1px solid #fff3;
+  cursor: pointer;
+}
+.dot[aria-selected="true"] { background: var(--dot-active); }
