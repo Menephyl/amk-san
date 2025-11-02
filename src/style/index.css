@@ -161,7 +161,7 @@ section {
     color: white;
     position: relative;
     background-color: #1e3347b0;
-    border-radius: 1rem;
+    border-radius: 2rem;
 }
 
 .section-title:after {
@@ -180,22 +180,23 @@ section {
 }
 
 .about-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
-    margin-bottom: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
 }
+
 .about-card {
-  flex: 1;
   background: #fff;
   padding: 2rem;
   border-radius: 15px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-  color: #003366;
+  text-align: center;
+  transition: transform 0.3s ease;
 }
 
 .img {
-   width: 1500px;
+   width: auto;
 }
 
 .about-card:hover {
@@ -204,26 +205,23 @@ section {
 }
 
 
-.about-card img {
-  max-width: 90%;
-  height: 600px;
-  border-radius: 10px;
-  display: block;
-  margin-top: 1rem;
-}
 .about-card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    color: var(--secondary);
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  color: var(--primary);
 }
-
+.about-card p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.5;
+}
 .about-card h4 {
     margin-top: 1rem;
     color: var(--primary);
 }
 
 .products {
-    background: white;
+    background: rgb(6, 26, 53);
 }
 
 .product-grid {
@@ -292,7 +290,7 @@ section {
 
 .benefits {
     background: var(--dark);
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 .benefits-grid {
@@ -334,7 +332,8 @@ section {
 }
 
 .how-to {
-    background: var(--light);
+    background: var(--dark);
+    color: #003366;
 }
 
 .steps {
@@ -382,12 +381,12 @@ section {
 }
 
 .results {
-    background: var(--secondary);
+     background: var(--dark);
     text-align: center;
-    color: ;
 }
 
 .stats {
+    
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 2rem;
@@ -399,6 +398,7 @@ section {
 }
 
 .stat-number {
+      background: var(--dark);
     font-size: clamp(2rem, 5vw, 3.5rem);
     font-weight: bold;
     background: linear-gradient(135deg, #003366 0%, #00cc66 100%);
@@ -409,7 +409,7 @@ section {
 }
 
 .catalog-section {
-    background: var(--light);
+    background: var(--dark);
     text-align: center;
 }
 
@@ -424,7 +424,7 @@ section {
 .catalog-links a {
     display: inline-block;
     padding: 1rem 2rem;
-    background: var(--primary);
+    background: var(--dark);
     color: white;
     text-decoration: none;
     border-radius: 10px;
