@@ -3,6 +3,7 @@
 Landing page responsiva para divulgação da Amakha Paris, destacando benefícios, produtos, catálogos e formas de contato para novos revendedores.
 
 🔗 **Preview Online:** [sandersonamk.vercel.app](https://sandersonamk.vercel.app/)
+<img width="730" height="547" alt="image" src="https://github.com/user-attachments/assets/c03ea65c-cdd3-4024-b5ef-bcf6f8d94d9f" />
 
 ---
 
