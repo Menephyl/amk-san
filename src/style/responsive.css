@@ -49,6 +49,7 @@
   .hero {
     padding: 2rem 1rem;
     background-position: center;
+     margin-top: -2rem;
   }
 
   .hero h1 {
@@ -199,8 +200,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
-
   }
 
   .about-content video {
@@ -222,6 +221,7 @@
   .contact-button {
     width: 100%;
     text-align: center;
+   
   }
 
   .floating-buttons {
