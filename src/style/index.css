@@ -8,15 +8,16 @@
     --primary: #4a0072;
     --secondary: #000000;
     --accent: #7c4dff;
-    --light: #f3e5f5;
+    --light: #1a0033;
     --dark: #0a0a0a;
 }
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    color: #333;
+    color: #eee;
     overflow-x: hidden;
+    background-color: var(--dark);
 }
 
 header {
@@ -187,12 +188,14 @@ section {
 }
 
 .about-card {
-    background: #fff;
-    padding: 2rem;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    background: rgba(74, 0, 114, 0.4);
+    /* Purple Background */
+    backdrop-filter: blur(10px);
+    padding: 2.5rem;
+    border-radius: 20px;
+    border: 1px solid rgba(124, 77, 255, 0.2);
     text-align: center;
-    transition: transform 0.3s ease;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .img {
@@ -213,7 +216,7 @@ section {
 
 .about-card p {
     font-size: 1rem;
-    color: #333;
+    color: rgba(255, 255, 255, 0.8);
     line-height: 1.5;
 }
 
@@ -268,7 +271,7 @@ section {
 
 .product-info {
     padding: 1.5rem;
-    color: black;
+    color: white;
 }
 
 .product-info h3 {
@@ -304,10 +307,12 @@ section {
 
 .benefit-item {
     text-align: center;
-    padding: 2rem;
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 15px;
-    transition: all 0.3s;
+    padding: 2.5rem;
+    background: rgba(74, 0, 114, 0.4);
+    /* Purple Background */
+    border: 1px solid rgba(124, 77, 255, 0.2);
+    border-radius: 20px;
+    transition: all 0.4s ease;
 }
 
 .benefit-item:hover {
@@ -324,6 +329,7 @@ section {
 .benefit-item h3 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
+    color: white;
 }
 
 .profit-highlight {
@@ -335,7 +341,7 @@ section {
 
 .how-to {
     background: var(--dark);
-    color: #003366;
+    color: white;
 }
 
 .steps {
@@ -346,12 +352,14 @@ section {
 }
 
 .step {
-    background: white;
-    padding: 2rem;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    background: rgba(74, 0, 114, 0.4);
+    /* Purple Background */
+    border: 1px solid rgba(124, 77, 255, 0.2);
+    padding: 2.5rem;
+    border-radius: 20px;
     position: relative;
-    transition: all 0.3s;
+    transition: all 0.4s ease;
+    color: white;
 }
 
 .step:hover {
@@ -379,7 +387,11 @@ section {
 .step h3 {
     margin-top: 1rem;
     font-size: 1.3rem;
-    color: var(--secondary);
+    color: var(--accent);
+}
+
+.step p {
+    color: rgba(255, 255, 255, 0.7);
 }
 
 .results {
@@ -400,10 +412,9 @@ section {
 }
 
 .stat-number {
-    background: var(--dark);
-    font-size: clamp(2rem, 5vw, 3.5rem);
-    font-weight: bold;
-    background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    font-weight: 800;
+    background: linear-gradient(135deg, #fff 0%, var(--accent) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -466,21 +477,32 @@ section {
 }
 
 .whatsapp {
-    background: #25D366;
+    background: var(--accent);
     color: white;
 }
 
 .whatsapp:hover {
-    background: #20ba5a;
+    background: var(--primary);
     transform: translateY(-5px);
 }
 
 .instagram {
-    background: #00cc66;
+    background: var(--accent);
     color: white;
 }
 
 .instagram:hover {
+    background: var(--primary);
+    transform: translateY(-5px);
+}
+
+.facebook {
+    background: var(--accent);
+    color: white;
+}
+
+.facebook:hover {
+    background: var(--primary);
     transform: translateY(-5px);
 }
 
@@ -519,13 +541,11 @@ section {
 }
 
 .floating-whatsapp:hover {
-    background: #25D366;
-    /* WhatsApp Green */
+    background: var(--accent);
 }
 
 .floating-facebook:hover {
-    background: #1877f2;
-    /* Facebook Blue */
+    background: var(--accent);
 }
 
 .floating-register:hover {
@@ -537,7 +557,7 @@ section {
     background: var(--accent);
     /* Site Accent (Violet) for Registration */
 }
-}
+
 
 footer {
     background: var(--secondary);
@@ -567,102 +587,4 @@ footer a {
     max-width: 43rem;
     height: auto;
     margin: 10px;
-}
-
-@media (max-width: 768px) {
-    .nav-links {
-        gap: 1rem;
-        font-size: 0.9rem;
-    }
-
-    .hero-media video,
-    .hero-media img {
-        width: 100%;
-        max-width: 340px;
-    }
-
-    .floating-buttons {
-        bottom: 1rem;
-        right: 1rem;
-    }
-
-    .floating-btn {
-        width: 50px;
-        height: 50px;
-        font-size: 1.5rem;
-    }
-
-    .zoom-container {
-        max-width: 350px;
-        max-width: 23rem;
-        overflow: hidden;
-        border-radius: 8px;
-    }
-
-    .zoom-container img {
-        width: 100%;
-        transition: transform 0.5s ease;
-    }
-
-    .zoom-container:hover img {
-        transform: scale(1.2);
-    }
-
-    /* Para dispositivos móveis: zoom ao tocar */
-    @media (hover: none) and (pointer: coarse) {
-        .zoom-container img:active {
-            transform: scale(1.2);
-        }
-    }
-}
-
-@media (max-width: 480px) {
-    nav {
-        padding: 0 1rem;
-    }
-
-    .logo {
-        font-size: 1.4rem;
-    }
-
-    .nav-links {
-        gap: 0.5rem;
-        font-size: 0.8rem;
-    }
-
-    section {
-        padding: 3rem 1rem;
-    }
-
-    footer {
-        min-width: 300px;
-        min-height: 600px;
-
-    }
-
-
-
-
-    .zoom-container {
-        background: var(--secondary);
-        max-width: 20rem;
-        overflow: hidden;
-        border-radius: 8px;
-    }
-
-    .zoom-container img {
-        max-width: 300px;
-        transition: transform 0.5s ease;
-    }
-
-    .zoom-container:hover img {
-        transform: scale(1.2);
-    }
-
-    /* Para dispositivos móveis: zoom ao tocar */
-    @media (hover: none) and (pointer: coarse) {
-        .zoom-container img:active {
-            transform: scale(1.2);
-        }
-    }
 }
