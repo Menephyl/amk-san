@@ -1,66 +1,58 @@
-# 🌟 Sanderson - Amakha Paris
+# 🌟 Rodrigo Flavio - Moments Paris
 
-Landing page responsiva para divulgação da Amakha Paris, destacando benefícios, produtos, catálogos e formas de contato para novos revendedores.
+Landing page premium e responsiva desenvolvida para o consultor **Rodrigo Flavio**, focada na divulgação da **Moments Paris**. A página destaca os benefícios de revenda, plano de carreira, catálogos interativos e facilita o contato direto para novos parceiros.
 
-🔗 **Preview Online:** [sandersonamk.vercel.app](https://sandersonamk.vercel.app/)
-<img width="730" height="547" alt="image" src="https://github.com/user-attachments/assets/c03ea65c-cdd3-4024-b5ef-bcf6f8d94d9f" />
+🔗 **Preview Online:** [sandersonamk.vercel.app](https://sandersonamk.vercel.app/) (Branch Rodrigo)
+
+![image](src/assets/moments.png)
 
 ---
 
-## 📖 Descrição
+## 📖 Descrição do Projeto
 
-Este projeto foi desenvolvido para apresentar a **Amakha Paris** de forma moderna e responsiva, com foco em atrair novos revendedores.  
-A página inclui:
+Esta versão da plataforma foi totalmente personalizada para o consultor Rodrigo, com uma estética moderna em tons de **Violeta e Preto**, transmitindo sofisticação e luxo.
 
-- **Hero com vídeo de fundo** e chamada para ação.
-- **Seção Sobre (About)** com diferenciais da empresa.
-- **Produtos e Benefícios** com destaques visuais.
-- **Resultados e Passo a Passo** para se tornar revendedor.
-- **Catálogos em PDF** disponíveis para download.
-- **Contato e botões flutuantes** para cadastro, WhatsApp e Instagram.
+### Principais Funcionalidades
+
+- **Identidade Visual Premium**: Refatoração completa da paleta de cores para violeta e preto.
+- **Sobre Rodrigo**: Seção personalizada com foto, frase motivacional e esclarecimento sobre suporte direto.
+- **PDF Slide Viewer**: Visualizador interativo de páginas da apresentação oficial usando **PDF.js**.
+- **Hero Slider**: Carrossel de imagens dinâmico para destacar lançamentos.
+- **Plano de Carreira & Ganhos**: Detalhamento visual de como lucrar com a Moments Paris.
+- **Botões Flutuantes Inteligentes**: Links rápidos para WhatsApp, Facebook e Cadastro com design moderno (black-to-color hover).
 
 ---
 
 ## 🛠️ Tecnologias Utilizadas
 
-- **HTML5** → Estrutura semântica da página.  
-- **CSS3 (Flexbox & Grid)** → Layout responsivo e estilização.  
-- **JavaScript (ES6)** → Interatividade e animações.  
-- **Font Awesome** → Ícones.  
-- **Vercel** → Hospedagem e deploy contínuo.  
+- **HTML5 / CSS3** (Vanilla)
+- **JavaScript (ES6+)**
+- **PDF.js** (Renderização de documentos no navegador)
+- **Font Awesome** (Ícones sociais e interfaces)
+- **Inter (Google Fonts)** (Tipografia moderna)
 
 ---
 
-## 📂 Estrutura das Seções
+## 📂 Organização das Seções
 
-- `#home` → Hero com vídeo de fundo e CTA.  
-- `#about` → Diferenciais da Amakha Paris.  
-- `#products` → Apresentação de produtos e vídeo.  
-- `#benefits` → Vantagens exclusivas para revendedores.  
-- `#results` → Estatísticas e resultados.  
-- `#how-to` → Passo a passo para se tornar revendedor.  
-- `#catalog` → Links para catálogos em PDF.  
-- `#contact` → Botões de contato e redes sociais.  
+- `#home` → Hero slider e CTA principal.
+- `#presentation` → **NOVO** Visualizador de PDF interativo.
+- `#products` → Showcase de perfumes árabes e vídeos de produtos.
+- `#plans` → Como você lucra (Consumo, Revenda e Carreira).
+- `#career` → Vídeo e detalhes do plano de crescimento.
+- `#results` → Estatísticas e perfil do consultor **Rodrigo**.
+- `#contact` → Cadastro Gratuito (Duda/Rodrigo) e Redes Sociais.
 
 ---
 
 ## 🚀 Como Rodar Localmente
 
-1. Clone este repositório:
-   ```bash
-   git clone https://github.com/seu-usuario/seu-repositorio.git
-Acesse a pasta do projeto:
+1. Clone o repositório.
+2. Certifique-se de estar na branch `rodrigo`.
+3. Abra o `index.html` em um servidor local (ex: Live Server).
 
-bash
-cd seu-repositorio
-Abra o arquivo index.html no navegador ou use uma extensão como Live Server no VS Code.
+---
 
-📱 Responsividade
-Desktop: Layout em múltiplas colunas, vídeos em destaque.
+## 👨‍💻 Autor
 
-Tablet: Ajuste automático para 2 colunas.
-
-Mobile: Layout em coluna única, botões maiores e vídeos centralizados.
-
-👨‍💻 Autor
-Projeto desenvolvido por Yan Menephyl Works 
+Customização e implementação técnica por **Yan Menephyl Works**.

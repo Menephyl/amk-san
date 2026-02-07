@@ -5,11 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Seja revendedor Amakha Paris e lucre de 100% a 200%. Mais de 600 produtos, loja virtual pronta, sem estoque. Comece seu negócio hoje!">
-    <title>Sanderson - Amakha Paris</title>
+        content="Seja revendedor Moments Paris e lucre de 100% a 200%. Mais de 600 produtos, loja virtual pronta, sem estoque. Comece seu negócio hoje!">
+    <title>Duda!- Moments Paris</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link data-react-helmet="true" rel="shortcut icon" href="https://amakha.vteximg.com.br/arquivos/favicon.png"
-        sizes="16x16" type="image/x-icon">
+    <link rel="shortcut icon" href="src/assets/moments.png" type="image/png">
     <link rel="stylesheet" href="src/style/index.css">
     <link rel="stylesheet" href="src/style/slider.css">
     <link rel="stylesheet" href="src/style/desktop.css">
@@ -19,9 +18,10 @@
 <body>
     <header>
         <nav>
-            <div class="logo"><img class="vtex-rich-text-0-x-image vtex-rich-text-0-x-image--logo"
-                    src="https://amakha.vtexassets.com/assets/vtex/assets-builder/amakha.store-theme/5.0.151/icons/header/logo___fbe4abebb0b0ca4fe85b2cef6ff540ef.png"
-                    alt="logo"></div>
+            <div class="logo" style="display: flex; align-items: center; padding: 0.5rem 0;">
+                <img src="src/assets/moments.png" alt="Moments Paris"
+                    style="height: 100px; width: auto; max-width: 100%; object-fit: contain;">
+            </div>
             <ul class="nav-links">
                 <li><a href="#home">Início</a></li>
                 <li><a href="#about">Sobre</a></li>
@@ -37,52 +37,71 @@
             <source src="src/assets/bg-video.mp4" type="video/mp4">
         </video>
         <div class="hero-content">
-            <h1>Transforme Sua Vida com Amakha Paris</h1>
+            <h1>Transforme Sua Vida com Moments Paris</h1>
             <p>Adquira nossos produtos com 50% de desconto e lucre até 200% na revenda! Cadastro gratuito e negócio
                 lucrativo!</p>
-            <a href="https://escritorio.amakhaparis.com.br/join/148801" class="cta-button" target="_blank">Cadastre-se
+            <a href="https://office.momentsparis.com.br/#/register/duda1234" class="cta-button">Cadastre-se
                 Grátis Agora</a>
 
         </div>
     </section>
 
 
-    <div class="about-content" style="background-color: black;">
-        <video width="80%" style="margin-left: 12rem; margin-top: 2rem; border-radius: 20px;" autoplay controls
-            src="src/assets/introdução.mp4"></video>
+    <div class="slider" aria-label="Galeria de imagens">
+        <div class="slider-track">
+            <img src="src/assets/image.png" alt="Slide 1">
+            <img src="src/assets/image copy.png" alt="Slide 2">
+            <img src="src/assets/image copy 2.png" alt="Slide 3">
+            <img src="src/assets/image copy 3.png" alt="Slide 4">
+            <img src="src/assets/image copy 4.png" alt="Slide 5">
+            <img src="src/assets/image copy 5.png" alt="Slide 6">
+            <img src="src/assets/image copy 6.png" alt="Slide 7">
+            <img src="src/assets/image copy 7.png" alt="Slide 8">
+            <img src="src/assets/image copy 8.png" alt="Slide 9">
+        </div>
+        <button class="nav prev" aria-label="Anterior">&#10094;</button>
+        <button class="nav next" aria-label="Próximo">&#10095;</button>
+        <div class="dots"></div>
     </div>
     <!-- About Section -->
     <section id="about" class="about">
-  <div class="container">
-    <h2 class="section-title animate-on-scroll">Por Que Amakha Paris?</h2>
-    <div class="about-content">
-      <div class="about-card animate-on-scroll">
-        <i class="fas fa-industry"></i>
-        <h3>Fábrica Própria</h3>
-        <p>Produtos fabricados com a mais alta tecnologia e controle de qualidade. Garantia de excelência em cada item.</p>
-      </div>
-      <div class="about-card animate-on-scroll">
-        <i class="fas fa-certificate"></i>
-        <h3>Credibilidade Total</h3>
-        <p>Certificações ANVISA e associação ABEVD. Empresa consolidada no mercado com reconhecimento nacional.</p>
-      </div>
-      <div class="about-card animate-on-scroll">
-        <i class="fas fa-shield-alt"></i>
-        <h3>Qualidade Garantida</h3>
-        <p>Produtos de alta performance que encantam e fidelizam clientes. Sua reputação está segura conosco.</p>
-      </div>
-    </div>
-  </div>
-</section>
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Por Que Moments Paris?</h2>
+            <div class="about-content">
+                <div class="about-card animate-on-scroll">
+                    <i class="fas fa-industry"></i>
+                    <h3>Fábrica Própria</h3>
+                    <p>Produtos fabricados com a mais alta tecnologia e controle de qualidade. Garantia de excelência em
+                        cada item.</p>
+                </div>
+                <div class="about-card animate-on-scroll">
+                    <i class="fas fa-certificate"></i>
+                    <h3>Credibilidade Total</h3>
+                    <p>Certificações ANVISA e associação ABEVD. Empresa consolidada no mercado com reconhecimento
+                        nacional.</p>
+                </div>
+                <div class="about-card animate-on-scroll">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Qualidade Garantida</h3>
+                    <p>Produtos de alta performance que encantam e fidelizam clientes. Sua reputação está segura
+                        conosco.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Products Section -->
     <section id="products" class="products">
         <div class="container">
-            <h2 class="section-title animate-on-scroll">Mais de 600 Produtos Para Você Revender</h2>
+            <h2 class="section-title animate-on-scroll">Mais de 200 Produtos Para Você Revender</h2>
+            <p class="section-subtitle animate-on-scroll"
+                style="text-align: center; color: #d4af37; font-size: 1.5rem; margin-bottom: 2rem;">
+                <i class="fas fa-crown"></i> Especialidade em Perfumes Árabes Originais - O Nosso Carro Chefe
+            </p>
             <div width="100%"
                 style="justify-content: center;align-items: center; display: flex; background: linear-gradient(rgba(0, 0, 0, 0.84), rgba(0, 0, 0, 0.253));border-radius: 2rem;">
-                <video controls style="border-radius: 2rem;"
-                    src="src/assets/AQNh1XgknqzNLXM_pVEwHP_dU--9XaRcQ1rGjXbh22Z-hL9zi8rkjJj4lz5xhBKcMALBiPbp2Q4YDZHpTEICi3AW.mp4"></video>
+                <video controls style="border-radius: 2rem; width: 100%; max-width: 800px;"
+                    src="src/assets/WhatsApp Video 2026-01-20 at 22.14.32.mp4"></video>
             </div>
         </div>
     </section>
@@ -102,7 +121,7 @@
                     <i class="fas fa-chart-line"></i>
                     <h3>Lucratividade Garantida</h3>
                     <div class="profit-highlight">100% de Lucro</div>
-                    <p>Compre por 50% e venda até por 100%. Seu esforço vale ouro!</p>
+                    <p>Compre por 50% e venda até por 200%. Seu esforço vale ouro!</p>
                 </div>
                 <div class="benefit-item animate-on-scroll">
                     <i class="fas fa-gift"></i>
@@ -128,13 +147,26 @@
         </div>
     </section>
 
+    <!-- Career Plan Section -->
+    <section id="career" class="career" style="background-color: #111; padding: 4rem 0;">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll" style="color: #d4af37;">Plano de Carreira</h2>
+            <p style="text-align: center; font-size: 1.2rem; margin-bottom: 2rem;">Cresça conosco e conquiste sua
+                independência financeira.</p>
+            <div width="100%"
+                style="justify-content: center;align-items: center; display: flex; background: linear-gradient(rgba(0, 0, 0, 0.84), rgba(0, 0, 0, 0.253));border-radius: 2rem; padding: 1rem;">
+                <video controls style="border-radius: 2rem; width: 100%; max-width: 800px;"
+                    src="src/assets/WhatsApp Video 2026-01-20 at 22.19.00.mp4"></video>
+            </div>
+        </div>
+    </section>
 
     <section id="results" class="results">
         <div class="container">
             <h2 class="section-title">Resultados Que Transformam Vidas</h2>
             <div class="stats">
                 <div class="stat-item">
-                    <div class="stat-number">600+</div>
+                    <div class="stat-number">200+</div>
                     <div class="stat-label">Produtos Disponíveis</div>
                 </div>
                 <div class="stat-item">
@@ -151,10 +183,27 @@
                 </div>
             </div>
             <div style="margin-top: 3rem;">
-                <p style="font-size: 1.3rem; margin-bottom: 1rem;">Se sua mente pode conceber, você pode realizar!
-                    Junte-se a milhares de revendedores de sucesso!</p>
-                <a href="https://escritorio.amakhaparis.com.br/join/148801" class="cta-button"
-                    target="_blank">Cadastre-se Grátis Agora</a>
+                <div
+                    style="display: flex; flex-direction: column; align-items: center; margin-bottom: 2rem; text-align: center;">
+                    <div
+                        style="width: 150px; height: 150px; border-radius: 50%; overflow: hidden; margin-bottom: 1rem; border: 4px solid #d4af37;">
+                        <img src="src/assets/rodrigo.png" alt="Rodrigo"
+                            style="width: 100%; height: 100%; object-fit: cover; object-position: top;">
+                    </div>
+                    <blockquote
+                        style="font-size: 1.4rem; font-style: italic; color: #555; max-width: 600px; margin-bottom: 1rem;">
+                        "O sucesso não acontece por acaso. É trabalho duro, perseverança, aprendizado, estudo,
+                        sacrifício e, acima de tudo, amor pelo que você está fazendo."
+                    </blockquote>
+                    <p
+                        style="font-size: 0.9rem; color: #777; max-width: 500px; background: #fff3cd; padding: 0.5rem; border-radius: 5px; border: 1px solid #ffeeba;">
+                        <i class="fas fa-info-circle"></i> <strong>Nota:</strong> O link de cadastro está em nome de
+                        minha filha, <strong>Maria Eduarda (Duda)</strong>. Todo o suporte e mentoria serão dados
+                        diretamente por mim, <strong>Rodrigo</strong>.
+                    </p>
+                </div>
+                <a href="https://office.momentsparis.com.br/#/register/duda1234" class="cta-button">Cadastre-se Grátis
+                    Agora</a>
             </div>
         </div>
     </section>
@@ -170,7 +219,7 @@
                 <div class="step">
                     <div class="step-number">2</div>
                     <h3>Escolha Seus Produtos</h3>
-                    <p>Navegue pelo catálogo e escolha os produtos que deseja adquirir com 50% OFF</p>
+                    <p>Navegue pelo catálogo e escolha os produtos em preço de fábrica</p>
                 </div>
                 <div class="step">
                     <div class="step-number">3</div>
@@ -184,70 +233,112 @@
                 </div>
             </div>
             <div style="text-align: center; margin-top: 3rem;">
-                <a href="https://escritorio.amakhaparis.com.br/join/148801" class="cta-button" target="_blank">Fazer
+                <a href="https://office.momentsparis.com.br/#/register/duda1234" class="cta-button">Fazer
                     Cadastro Gratuito</a>
             </div>
         </div>
         <section class="catalog-section">
-        <div class="container">
-            <h2 class="section-title">Baixe nossos catálogos</h2>
-            <div class="catalog-links">
-                <a  style="border: 5px solid white; border-radius: 1.5rem;" href="src/assets/enciclopedia_offativa.pdf" target="_blank">
-                    <i class="fas fa-file-pdf"></i> Catálogo de Perfumes
-                </a>
-                <a style="border: 5px solid white; border-radius: 1.5rem;" href="src/assets/enciclopedia_geral.pdf" target="_blank">
-                    <i class="fas fa-file-pdf"></i> Catálogo Completo
-                </a>
+            <div class="container">
+                <h2 class="section-title">Baixe nossos catálogos</h2>
+                <div class="catalog-links">
+                    <a style="border: 5px solid white; border-radius: 1.5rem;"
+                        href="src/assets/enciclopedia_offativa.pdf" target="_blank">
+                        <i class="fas fa-file-pdf"></i> Catálogo de Perfumes
+                    </a>
+                    <a style="border: 5px solid white; border-radius: 1.5rem;" href="src/assets/enciclopedia_geral.pdf"
+                        target="_blank">
+                        <i class="fas fa-file-pdf"></i> Catálogo Completo
+                    </a>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Cadastre-se Grátis ou Fale Comigo</h2>
-            <p style="font-size: 1.3rem; margin-bottom: 2rem;">Faça seu cadastro gratuito agora ou tire suas dúvidas
-                comigo!</p>
-            <div class="contact-buttons">
-                <a href="https://escritorio.amakhaparis.com.br/join/148801" class="contact-button instagram"
-                    target="_blank">
-                    <i class="fas fa-user-plus"></i>
-                    <span>Cadastro Gratuito</span>
-                </a>
-                <a href="https://wa.me/5535988579827?text=Olá!%20Quero%20saber%20mais%20sobre%20ser%20revendedor%20Amakha%20Paris"
-                    class="contact-button whatsapp" target="_blank">
-                    <i class="fab fa-whatsapp"></i>
-                    <span>WhatsApp</span>
-                </a>
-                <a href="https://www.instagram.com/sanderson_san2013/" class="contact-button instagram" target="_blank">
-                    <i class="fab fa-instagram"></i>
-                    <span>Instagram</span>
-                </a>
+        <!-- PDF Presentation Section -->
+        <section id="presentation" class="presentation" style="background: var(--dark); padding: 4rem 0;">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll">Conheça Nossa Apresentação</h2>
+                <div class="pdf-slider-container"
+                    style="position: relative; max-width: 900px; margin: 0 auto; background: #000; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+                    <div id="pdf-loader"
+                        style="position: absolute; top:50%; left:50%; transform:translate(-50%, -50%); color: #fff; z-index: 10;">
+                        <i class="fas fa-spinner fa-spin fa-2x"></i>
+                    </div>
+                    <canvas id="pdf-canvas" style="display: block; width: 100%; height: auto;"></canvas>
+
+                    <div class="pdf-controls"
+                        style="position: absolute; bottom: 10px; left: 0; right: 0; display: flex; justify-content: center; gap: 20px; align-items: center; z-index: 5;">
+                        <button id="pdf-prev" class="nav"
+                            style="position: static; transform: none; background: var(--accent);">&#10094;</button>
+                        <span id="page-num-display"
+                            style="color: #fff; background: rgba(0,0,0,0.6); padding: 5px 15px; border-radius: 20px; font-weight: bold;">Página:
+                            <span id="page_num"></span> / <span id="page_count"></span></span>
+                        <button id="pdf-next" class="nav"
+                            style="position: static; transform: none; background: var(--accent);">&#10095;</button>
+                    </div>
+                </div>
+                <div style="text-align: center; margin-top: 2rem;">
+                    <a href="src/assets/Apresentação Oficial Moments Paris-Jan -2026.pdf" target="_blank"
+                        class="cta-button" style="padding: 0.8rem 2rem; font-size: 1rem;">
+                        <i class="fas fa-download"></i> Baixar PDF Completo
+                    </a>
+                </div>
             </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Cadastre-se Grátis ou Fale Comigo</h2>
+                <p style="font-size: 1.3rem; margin-bottom: 2rem;">Faça seu cadastro gratuito agora ou tire suas dúvidas
+                    comigo!</p>
+                <div class="contact-buttons">
+                    <a href="https://office.momentsparis.com.br/#/register/duda1234" class="contact-button instagram"
+                        target="_blank">
+                        <i class="fas fa-user-plus"></i>
+                        <span>Cadastro Gratuito</span>
+                    </a>
+                    <a href="https://wa.me/5535988826601?text=Olá!%20Quero%20saber%20mais%20sobre%20ser%20revendedor%20Moments%20Paris"
+                        class="contact-button whatsapp" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>WhatsApp</span>
+                    </a>
+                    <a href="https://www.facebook.com/rodrigoflaviodesouza.flavio" class="contact-button facebook"
+                        style="background: #1877f2;" target="_blank">
+                        <i class="fab fa-facebook"></i>
+                        <span>Facebook</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <div class="floating-buttons">
+            <a href="https://office.momentsparis.com.br/#/register/duda1234" class="floating-btn floating-register"
+                target="_blank" title="Cadastro Gratuito">
+                <i class="fas fa-user-plus"></i>
+            </a>
+            <a href="https://wa.me/5535988579827?text=Olá!%20Quero%20saber%20mais%20sobre%20ser%20revendedor%20Moments%20Paris"
+                class="floating-btn floating-whatsapp" target="_blank" title="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://www.facebook.com/rodrigoflaviodesouza.flavio" class="floating-btn floating-facebook"
+                target="_blank" title="Facebook">
+                <i class="fab fa-facebook"></i>
+            </a>
         </div>
-    </section>
 
-    <div class="floating-buttons">
-        <a href="https://escritorio.amakhaparis.com.br/join/148801" class="floating-btn floating-whatsapp"
-            target="_blank" title="Cadastro Gratuito">
-            <i class="fas fa-user-plus"></i>
-        </a>
-        <a href="https://wa.me/5535988579827?text=Olá!%20Quero%20saber%20mais%20sobre%20ser%20revendedor%20Amakha%20Paris"
-            class="floating-btn floating-whatsapp" target="_blank" title="WhatsApp">
-            <i class="fab fa-whatsapp"></i>
-        </a>
-        <a href="https://www.instagram.com/sanderson_san2013/" class="floating-btn floating-instagram" target="_blank"
-            title="Instagram">
-            <i class="fab fa-instagram"></i>
-        </a>
-    </div>
+        <!-- Footer -->
+        <footer>
+            <p>Consultoria Rodrigo</p>
+            <span>Quer um site como este? Entre contato com o autor</span>
+            <p>&copy; Projeto feito por <a href="https://instagram.com/yan_menephyl_works" target="_blank"> Yan Menephyl
+                    Works</a> - Todos os direitos reservados </p>
+        </footer>
 
-    <!-- Footer -->
-    <footer>
-        <p>Revendedor Autorizado: Sanderson</p>
-<span>Quer um semelhante? Entre contato com o autor</span>
-        <p>&copy; Projeto feito por <a href="https://instagram.com/yan_menephyl_works" target="_blank"> Yan Menephyl
-                Works</a> - Todos os direitos reservados </p>
-    </footer>
-
-    <script src="./js/index.js"></script>
-    <script src="./js/app.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+        <script>
+            // Set worker path
+            pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+        </script>
+        <script src="src/js/index.js"></script>
+        <script src="src/js/slider_logic.js"></script>
+        <script src="src/js/pdf_slider.js"></script>
+        <script src="./js/app.js"></script>
